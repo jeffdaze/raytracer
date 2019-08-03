@@ -88,3 +88,8 @@ Vector.reflectThrough = function(a, normal) {
 	var d = Vector.scale(normal, Vector.dotProduct(a, normal));
 	return Vector.subtract(Vector.scale(d, 2), a);
 };
+
+// module export...
+// doesn't appear to work anywhere??
+// will investigate later...
+// export { Vector };
