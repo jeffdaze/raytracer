@@ -82,14 +82,9 @@ Vector.length = function(a) {
 };
 
 // Given a vector `a`, which is a point in space, and a `normal`, which is
-// the angle the point hits a surface, returna  new vector that is reflect
+// the angle the point hits a surface, return a new vector that is reflected
 // off of that surface
 Vector.reflectThrough = function(a, normal) {
 	var d = Vector.scale(normal, Vector.dotProduct(a, normal));
 	return Vector.subtract(Vector.scale(d, 2), a);
 };
-
-// module export...
-// doesn't appear to work anywhere??
-// will investigate later...
-// export { Vector };
